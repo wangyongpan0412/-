@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的院校邦</title>
+    <!-- 第一步：引入初始化css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 第二步：引入插件的css代码 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 第三步：引入我们的css文件 -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        /* 为swiper轮播图设置样式 */
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        /* 为轮播图中的图片设置样式 */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 轮播图 -->
+    <!-- html代码区 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- alt属性为图片不能正常显示的时候要替换的文本 -->
+            <div class="swiper-slide"><a href="http://stu.ityxb.com/openCourses/detail/290" target="_blank"><img
+                        src="images/banner_1.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="http://stu.ityxb.com/openCourses/detail/303" target="_blank"><img
+                        src="images/banner_2.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="http://stu.ityxb.com/openCourses/detail/302" target="_blank"><img
+                        src="images/banner_3.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="http://stu.ityxb.com/openCourses/detail/301" target="_blank"><img
+                        src="images/banner_4.jpg" alt=""></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- js代码区 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        /*{}表示对象 */
+        var mySwiper = new Swiper('.swiper-container', {
+            //   direction: 'vertical', // 垂直切换选项 属性：值 默认是水平
+            loop: true, // 循环模式选项
+            autoplay: true,
+            // 如果需要分页器 点点点
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, //最后一个}后面的，可以有也可以没有
+        })
+    </script>
+    <!-- 轮播图结束 -->
+
+    <!-- 版心 -->
+    <div class="w">
+        <!-- 标题1 -->
+        <div class="title_body">
+            <h2>Discipline / 学科分类</h2>
+            <h5>不断深入科技前沿领域</h5>
+        </div>
+
+        <!-- 内容区域 1-->
+        <div class="container clearfix">
+            <a href="http://stu.ityxb.com/resources/resourcesDetail/214" target="_blank" class="margin_right_66"><img
+                    src="images/html.jpg" alt=""></a>
+            <a href="http://stu.ityxb.com/resources/resourcesDetail/293" target="_blank" class="margin_right_66"><img
+                    src="images/java.jpg" alt=""></a>
+            <a href="http://stu.ityxb.com/resources/resourcesDetail/291" target="_blank" class="margin_right_66"><img
+                    src="images/ui.png" alt=""></a>
+            <a href="http://stu.ityxb.com/resources/resourcesDetail/198" target="_blank"><img src="images/python.png"
+                    alt=""></a>
+        </div>
+        <!-- 更多 -->
+        <a href="#" class="button_more">更多作品
+            <!-- i标签 文字以斜体方式显示 -->
+            <i></i>
+        </a>
+
+        <!-- 标题2 -->
+        <div class="title_body">
+            <h2>Course / 往期公开课</h2>
+            <h5>专为在校学生研发的精品课程</h5>
+        </div>
+        <!-- 内容区域 2-->
+        <div class="container clearfix">
+            <a href="#" class="margin_right_66">
+                <img src="images/intelligence_lesson.jpg" alt=""></a>
+            <a href="#" class="margin_right_66"><img src="images/java_lesson.jpg" alt=""></a>
+            <a href="#" class="margin_right_66"><img src="images/ui_lesson.jpg" alt=""></a>
+            <a href="#"><img src="images/web_lesson.jpg" alt=""></a>
+        </div>
+        <!-- 更多 -->
+        <a href="#" class="button_more">更多作品
+            <!-- i标签 文字以斜体方式显示 -->
+            <i></i>
+        </a>
+
+        <!-- 标题3 -->
+        <div class="title_body">
+            <h2>SuperStar / 超级明星俱乐部</h2>
+            <h5>技术达人，最强大脑，前端先驱</h5>
+        </div>
+        <!-- 内容区域 3-->
+        <div class="peopleContainer clearfix">
+            <a href="#" class="margin_right_225">
+                <img src="images/jetyu.jpg" alt="">
+                <h2 class="name">JetYu 于涛</h2>
+                <h2 class="introduce">AlloyTeam创始人</h2>
+            </a>
+            <a href="#" class="margin_right_225">
+                <img src="images/dntzhang.jpg" alt="">
+                <h2 class="name">DntZhang 张磊</h2>
+                <h2 class="introduce">知名博主，多个开源框架作者</h2>
+            </a>
+            <a href="#">
+                <img src="images/dorsywang.jpg" alt="">
+                <h2 class="name">DorsyWang 王老师</h2>
+                <h2 class="introduce">数学达人，图像处理专家</h2>
+            </a>
+        </div>
+        <!-- 更多 -->
+        <a href="#" class="button_more">更多作品
+            <!-- i标签 文字以斜体方式显示 -->
+            <i></i>
+        </a>
+    </div>
+
+    <!-- 版尾 -->
+    <div class="contentEnd">
+        <div class="end1">
+            <img src="images/logo.png" alt="">
+            <h2 class="text1">协万千名校育人,助天下英才圆梦</h2>
+            <h2 class="text2">©2019江苏传智播客教育科技股份有限公司苏Icp备<br />16007882号-6营业执照增值电信业务经营许可证</h2>
+        </div>
+        <div class="end2">
+            <h2 class="xiongdi">兄弟团队</h2>
+            <h2 class="text3">腾讯CDC</h2>
+            <h2 class="text3">腾讯ISUX</h2>
+            <h2 class="text3">腾讯TGideas</h2>
+            <h2 class="text3">腾讯FERD</h2>
+            <h2 class="text3">百度FEX</h2>
+            <h2 class="text3">淘宝FED</h2>
+        </div>
+        <div class="end3">
+            <h2 class="linktitle"><a href="#">友情链接</a></h2>
+            <h2 class="mylink"><a href="#">传智教育</a></h2>
+            <h2 class="mylink"><a href="#">CSDN 黑马程序员</a></h2>
+            <h2 class="mylink"><a href="#">博学谷</a></h2>
+            <h2 class="mylink"><a href="#">传智专修学院</a></h2>
+            <h2 class="mylink"><a href="#">酷丁鱼</a></h2>
+            <h2 class="mylink"><a href="#">传智汇</a></h2>
+            <h2 class="mylink"><a href="#">黑马教程</a></h2>
+            <h2 class="mylink"><a href="#">中国教育网</a></h2>
+        </div>
+        <div class="endcall">
+            <img src="images/m_code.jpg" alt="">
+            <h2>扫码添加邦小苑公众号<br/>获取更多教辅资源</h2>
+        </div>
+        <div class="endcall">
+            <img src="images/x_code.png" alt="">
+            <h2>扫码添加小邦学姐微信<br/>获取更多学习资源</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
